@@ -1,0 +1,40 @@
+- Potencia 
+Math.pow(base, exponente);
+
+- Redondear al entero más próximo
+Math.round();
+
+- Redondear hacia arriba
+Math.ceil(); 
+
+- Longitud string 
+VARIABLE.length
+
+- Testear 
+npm test JSI.test.js
+
+- Guardar tareas
+git status
+git add .
+git status
+git commit -m 'NOMBRE DE LO QUE HICE'
+git push 
+
+- Cualquier número excepto el 0 es true para JS
+- Cualquier string excepto una vacía, es true para JS
+
+- Negar algo: !()
+
+- Comparar tipo y dato: ===
+
+- Cortar una ejecución: ctrl + C
+
+- Poner un dato en la última posición libre de un array
+nombrearray.push(DATO);
+
+- Devuelve y elimina un dato de la última posición de un array
+nombrearray.pop();
+
+- Buscar propiedad de un objeto:
+  - nombreobjeto.nombrepropiedad ---> dot notation
+  - nombreobjeto['nombrepropiedad'] ---> bracket notation
