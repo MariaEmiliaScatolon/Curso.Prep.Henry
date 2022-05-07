@@ -1,0 +1,132 @@
+- Crear clase (las clases son funciones)
+class nombreClase(empieza en mayusc) {
+	constructor(propiedad1, propiedad2){
+		this.propiedad1 = valor1;
+		this.propiedad2 = valor2; 
+	}
+}
+
+- null: es la ausencia de valor 
+- let -> designar variable 
+- const -> designar constante (no puedo cambiarle el valor asignado)
+
+- Operadores: 
+  modulo -> %
+  exponente -> **
+  de asignación compuesto -> var += num;  (var = var + num)
+  el de asignación compuesto se puede hacer con cualquier operador 
+
+- Incremento/ decremento:
+  var1 = ++/--var2; (preincremento)
+  la var2 se incrementa o decrementa en uno y luego se asigna ese valor (incrementado) a var1
+  
+  var1 = var2++; (post- incremento)
+  la var1 toma el valor de var2 y luego se incrementa o decrementa la var2 en uno 
+
+- Operadores lógicos: 
+  and -> &&
+  or -> ||
+  ternario (simil if) -> let variable = (condición) ? rtaVerdadera : rtaFalsa 
+  
+- Convertir String a número: (sólo cuando el String tiene números)
+  let nuevaVariable = Number (variableQueQuieroConvertir);
+  *si sale NaN es not a number (porque el string que intento convertir no tiene sólo números)
+  *para corroborar si es un número: is NaN(variable)
+
+-quokka
+  ctrl + shift + p
+
+- Ir a la siguiente iteración -> continue; (es lo opuesto de break)
+
+- Etiquetas: me sirven para indicar a dónde quiero ir 
+
+- Saber si es un array: Array.isArray(nombreArray); 
+
+- Hoisting: utilizar una función antes de su declaración. 
+  No funciona en clases.
+
+- Función de tipo expresión: 
+  tipoVariable nombreVariable = function(parámetros){return loQueTieneQueHacer};
+
+- Función self invoking: se declara y utiliza a la vez
+  (function (parámetros){
+	loQueTieneQueHacer; 
+  })(parámetros);
+
+- Funciones tipo flecha: no necesitan la palabra function
+  tipoVariable nombreFuncion = (parametros) => loQueTieneQueHacer;
+
+*Parámetros: lista de variables que definimos en una función. Le podemos asignar valores por default 
+*Argumentos: valores que pasamos cuando llamamos una función. Sobreescriben al default
+*La cantidad de parámetros y argumentos puede ser diferente 
+
+- For in: sirve para recorrer las propiedades de un objeto 
+  for (propiedad in nombreObjeto){
+      loQueQuieroHacer
+  }
+
+- let nombreVariable = Object.values(nombreObjeto);
+  guarda en la variable los valores de las propiedades del objeto en un array
+
+- let nombreVariable = JSON.stringify(nombreObjeto)
+  guarda en una cadena los valores de las propiedades del objeto
+
+- Método constructor de objetos: 
+  function nombreObjeto(prop1, prop2, prop3){
+      this.prop1 = prop1; 
+      this.prop2 = prop2; 
+      this.prop3 = prop3; 
+  }
+
+- Para crear objeto: 
+  let nombre = new nombreObjeto('prop1', 'prop2', 'prop3')
+
+- Para agregar una propiedad a un objeto: 
+  Objeto.prototype.propiedad = valorDefault
+
+- Usar un método de un objeto en otro objeto: 
+  objeto1.nombreMetodo.call(objeto2); 
+
+- Herencia: 
+  class claseHija extends clasePadre{
+    constructor (parametrosClaseHija){  
+        super (parametrosQueRecibeClasePadre);
+        this.parametrosClaseHija = valor;
+    }
+  }
+
+- Cuando creo un objeto de la clase hija tengo que pasar los parámetros 
+  de la clase padre y de la clase hija
+ 
+- Para sobreescribir un método de la clase padre (por ej para agregar atributos): 
+  nombreMetodo(){
+      return super.nombreMetodo() + loQueQuieroAgregar
+  }
+
+- Polimorfismo: múltiples formas en tiempo de ejecución. El método que se ejecuta depende
+  si es una referencia de tipo padre o de tipo hijo. 
+	
+- Los métodos static no pueden ser llamados desde un objeto, si desde una clase
+
+- A los métodos static si les podemos pasar un objeto por parámetro
+
+- Los atributos static se asocian con la "plantilla" (clase)
+
+- Los atributos no static se asocian directamente con el objeto que se crea desde esa clase 
+
+- Template string: sirve para concatenar en el método toString de una forma más corta los atributos
+  toString(){
+	return `
+ 		${this.atributo}
+		${this.atributo2}
+		${this.atributo3}`;
+
+- Para devolver pares clave valor en un array: 
+  Object.entries (nombreObjeto)
+
+
+  
+
+
+
+

@@ -25,12 +25,15 @@ git push
 
 - Negar algo: !()
 
+- Comparar dato: ==
+
 - Comparar tipo y dato: ===
 
 - Cortar una ejecución: ctrl + C
 
 - Poner un dato en la última posición libre de un array
-nombrearray.push(DATO);
+nombreArray.push(DATO);
+nombreArray[nombreArray.length] = DATO
 
 - Devuelve y elimina un dato de la última posición de un array
 nombrearray.pop();
@@ -53,3 +56,17 @@ const nombreVarDondeGuardoElValor = array.reduce(function(acc, elemento){
 const Nombre = array.map(function(elemento){
 	return LoQueQuieroHacer; 
 });
+
+- Saber tipo de dato que hay en la variable: 
+typeof nombreVariable;
+
+CSS
+- # -> id 
+  .nombre -> clase
+- fixed: sirve para dejar algo fijo aunque scrollee
+- position: static (la que tiene por defecto) -> no me permite moverlo
+  position: relative -> si me permite moverlo manteniendo la posición original del elemento
+  position: absolute -> lo mueve desde la posición original de todo el contenido
+- display: block -> hace salto de línea
+- justify-content: space-evenly -> hace espacios entre los elementos 
+
